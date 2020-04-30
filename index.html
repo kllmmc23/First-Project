@@ -1,40 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="utf-8">
+    <title>Michael Elliott's Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <header>
-            <h1>
-                Hello <br />
-                I a Michael Elliott <br />
-                An Engineer and Dev.
-            </h1>
-        </header>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="HTML/resume.html" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-            <h2>Contact</h2>
-            <p>Email me at cmmllka@gmail.com</p>
-            <p>Phone: 7205305571</p>
-        </section>
-        <footer>
-            <p>&copy; 2020 My Portfolio</p>
-            <p>
-                Follow me on
-                <a href="https://www.linkedin.com/in/michael-elliott-20506885">Linkedin</a>
-            </p>
-        </footer>
+
+    <div class="main-nav">
+        <ul class="nav">
+            <li class="name">Michael Elliott</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="HTML/resume.html">Experience</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
+
+    <header>
+        <img src="http://placeimg.com/640/480/tech" alt="Drawing of Michael Elliott" class="profile-image">
+        <h1 class="tag name">Hello,I am Michael Elliott.</h1>
+        <p class="tag location">My home is Denver, Colorado.</p>
+    </header>
+
+    <main class="flex">
+        <div class="card">
+            <h2>Background</h2>
+            <p>I’m an Engineer and aspiring web developer who loves everything about the web. I've lived in a few
+                different places
+                and have worked in lots of different jobs. I’m excited to bring my life experience to the process of
+                building accessible web applications.</p>
+            <p>I’ve been a professional engineer and a life-long learner who's always interested in
+                expanding my skills.</p>
+            <ul>
+                <li>To learn more, <a href="HTML/resume.html">view my resume.</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Goals</h2>
+            <p>I want to master the process of building web applications and increase my knowledge, skills and abilities
+                in:
+            </p>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Angular</li>
+                <li>React</li>
+            </ul>
+            <p>I’d like to work as a front end developer to help clients create an impressive online presence.</p>
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#" class="social twitter">Twitter</a></li>
+            <li><a href="#" class="social linkedin">LinkedIn</a></li>
+            <li><a href="#" class="social github">Github</a></li>
+        </ul>
+        <p class="copyright">Copyright 2020, Michael Elliott</p>
+    </footer>
 </body>
 
 </html>
