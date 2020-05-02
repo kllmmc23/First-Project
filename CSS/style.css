@@ -1,90 +1,109 @@
 /* Global Layout Set-up */
-* { 
+
+* {
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #222;
     background: #f7f5f0;
-  }
-  /* Link Styles */
-  
-  a {
+}
+
+/* Link Styles */
+
+a {
     text-decoration: none;
     color: #edf2f5;
-  }
-  a:hover {
+}
+
+a:hover {
     color: #6633ff;
-  }
-  
-  /* Section Styles */
-  
-  .main-nav {
+}
+
+/* Section Styles */
+
+.main-nav {
     width: 100%;
-    background: #24680f;
+    background: rgb(25, 187, 125);
     min-height: 30px;
     padding: 10px;
     position: fixed;
     text-align: center;
-  }
-  .nav {
+}
+
+.nav {
     display: flex;
     justify-content: space-around;
     font-weight: 700;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-  }
-  .nav .name {
+}
+
+.nav .name {
     display: none;
-  }
-  .nav li {
+}
+
+.nav li {
     padding: 5px 10px 10px 10px;
-  }
-  .nav a {
+}
+
+.nav a {
     transition: all .5s;
-  }
-  .nav a:hover {
+}
+
+.nav a:hover {
     color: white
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
-    background: url('http://placeimg.com/800/600/nature') no-repeat top center ;
+    background: url('http://placeimg.com/1000/600/tech') no-repeat top center;
     background-size: cover;
     overflow: hidden;
     padding-top: 60px;
-  }
-  header {
+}
+
+header {
     line-height: 1.5;
-  }
-  header .profile-image {
+}
+
+header .profile-image {
     margin-top: 50px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 3px solid white;
     transition: all .5s;
-  }
-  header .profile-image:hover {
+}
+
+header .profile-image:hover {
     transform: scale(1.2) rotate(5deg);
-  }
-  .tag {
+}
+
+.tag {
     background-color: #efefef;
     color: black;
     padding: 10px;
     border-radius: 5px;
     display: table;
     margin: 10px auto;
-  } 
-  .location {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.location {
     background-color: rgb(243, 239, 239);
     color: black;
-  }
-  .card {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+}
+
+.card {
     margin: 30px;
     padding: 20px 40px 40px;
     max-width: 500px;
@@ -93,52 +112,53 @@
     border-bottom: 4px solid #ccc;
     border-radius: 6px;
     text-align: center;
-  }
-  .card:hover {
-    border-color: #24680f;
-  }
-  
-  ul.skills {
+}
+
+.card:hover {
+    border-color: rgb(25, 187, 125);
+}
+
+ul.skills {
     padding: 0;
     text-align: center;
-  }
-  
-  .skills li {
+}
+
+.skills li {
     border-radius: 6px;
     display: inline-block;
-    background: #24680f;
+    background: rgb(25, 187, 125);
     color: white;
     padding: 5px 10px;
     margin: 2px;
-  }
-  
-  .skills li:nth-child(odd) {
+}
+
+.skills li:nth-child(odd) {
     background: #0399ff;
-  }
-  
-  footer {
+}
+
+footer {
     width: 100%;
     min-height: 30px;
     padding: 20px 0 40px 20px;
-  }
-  
-  footer .copyright {
+}
+
+footer .copyright {
     top: -8px;
     margin-right: 20px;
     font-size: .75em;
-  }
-  
-  footer ul {
+}
+
+footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  footer ul li {
+}
+
+footer ul li {
     display: inline-block;
-  }
-  
-  a.social {
+}
+
+a.social {
     display: inline-block;
     text-indent: -9999px;
     margin-left: 5px;
@@ -147,63 +167,65 @@
     background-size: 30px 30px;
     opacity: .5;
     transition: all .25s;
-  }
-  a.twitter {
+}
+
+a.twitter {
     background-image: url(images/twitter.svg);
-  }
-  a.linkedin {
+}
+
+a.linkedin {
     background-image: url(images/linkedin.svg);
-  }
-  a.github {
+}
+
+a.github {
     background-image: url(images/github.svg);
-  }
-  a.social:hover {
+}
+
+a.social:hover {
     opacity: 1;
-  }
-  .clearfix {
+}
+
+.clearfix {
     clear: both;
-  }
-  .link-resume{
-      color: #0399ff;
-  }
-  /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
-    
+}
+
+.link-resume {
+    color: #0399ff;
+}
+
+.flex{
+    width: 85%;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 720px) {
     .flex {
         display: flex;
         max-width: 1200px;
         justify-content: space-around;
         margin: 0 auto;
     }
-  
     header {
-      min-height: 450px;
+        min-height: 450px;
     }
-  
     .nav {
-      max-width: 1200px;
+        max-width: 1200px;
     }
-  
     .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
+        display: block;
+        margin-right: auto;
+        color: white;
     }
-  
     main {
-      padding-top: 50px;
+        padding-top: 50px;
     }
-  
     main p {
-      line-height: 1.6em;
+        line-height: 1.6em;
     }
-  
     footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
     }
-  
-  }
-  
-  
+}
